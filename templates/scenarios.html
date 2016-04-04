@@ -3,18 +3,60 @@
 {% extends "templates/base.html" %}
 <!-- Override page specefic content -->
 {% block content %}
-<!-- checking if the user has entered correct credentials -->
-{% if loggedIn == False %}
-<!-- if false, render the form  -->
-<form method="post" action="/login">
-	<!-- Displaying error message depending upon if the variable is present -->
-	<p>{{ErrorMessage}}</p>
-	<p>Username: <input type="text" name="username"/></p>
-	<p>Password: <input type="password" name="password"/></p>
-	<p><input type="submit"></p>
-</form>
-{% else %}
-<!-- Display logged in message only -->
-<p>You are successfully logged in!</p>
-{% endif %}
+<section id="scenario" class="scenario-section">
+ 
+            <div class="container" >
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 col-xs-12">
+             <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                        
+                           <ol class="carousel-indicators">
+                             <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                             <li data-target="#mycarousel" data-slide-to="1"></li>
+                             <li data-target="#mycarousel" data-slide-to="2"></li>
+                            
+                         </ol>
+ 
+                         
+                         <div class="carousel-inner" role="listbox">
+                             <div class="item col-md-12">
+                                 <img src="../static/images/sc-01.png" alt="First Image">
+                                 <div class="carousel-caption">
+                                     <h3>First Image</h3>
+                                 </div>
+                             </div>
+                             <div class="item col-md-12">
+                                 <img src="../static/images/sc-02.png"  alt="Second Image">
+                                 <div class="carousel-caption">
+                                     <h3>Second Image</h3>
+                                 </div>
+                             </div>
+                             <div class="item col-md-12">
+                                 <img src="../static/images/sc-03.png"  alt="Third Image">
+                                 <div class="carousel-caption">
+                                     <h3>Third Image</h3>
+                                 </div>
+                             </div>
+                            
+                         </div>
+ 
+                         
+                         <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                             <span class="sr-only">Previous</span>
+                         </a>
+                         <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                             <span class="sr-only">Next</span>
+                         </a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+
+                  
+                 </section>
+
+
 {% endblock %}

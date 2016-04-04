@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html> 
-
+{% if title=="index"%}
+	{% set title = "about" %}
+{% endif %}
 <head>
 	<meta charset="UTF-8">
 	<title>Wash-able</title>
@@ -32,61 +34,82 @@
 					<ul class="nav navbar-nav navbar-right">
 						<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
 						<li class="hidden">
-							<a  href="#page-top"></a>
+							<a   href="#page-top"></a>
 						</li>
 
 						<li>
-							<a href="index.html">about</a>
+							<a href="index">{% if title=="about" %}
+								ABOUT
+								{% else %}
+								about
+								{% endif %}</a>
 
-						</li>
-						<li>
-							<a  href="features">features</a>
+							</li>
+							<li>
+								<a  href="features">{% if title=="features" %}
+									FEATURES
+									{% else %}
+									features
+									{% endif %}</a>
 
-						</li>
+								</li>
 
-						<li>
-							<a href="video">video</a>
-						</li>
+								<li>
+									<a   href="video">{% if title=="video" %}
+										VIDEO
+										{% else %}
+										video
+										{% endif %}</a>
+									</li>
 
-						<li>
-							<a href="scenarios">scenarios</a>
-						</li>
+									<li>
+										<a href="scenarios">{% if title=="scenarios" %}
+											SCENARIOS
+											{% else %}
+											scenarios
+											{% endif %}</a>
+										</li>
 
 
-						<li>
-							<a  href="team">team</a>
-						</li>
-
-
-
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-			<!-- /.container -->
-		</nav>
-	</header>
-	
-	{% block content %}
-	
-	{% endblock %}
-	<footer>
-		<button type="button" class="btn circle3"></button>
-		<button type="button" class="btn circle2"></button>
-		<button type="button" class="btn circle1"></button>
-		<button onclick="location.href='http://www.tauber.umich.edu/events-training/integrated-product-development/2016-04-06/integrated-product-development-trade-show';" type="button" class="btn btn-circle" style="font-family:caviar_dreamsbold;font-size:16px;">IPD Home</button>
-
-	</footer>
-
-	<!-- jQuery -->
-	<script src="../static.js/jquery.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-	<!-- Bootstrap Core JavaScript -->
-	<script src="../static/js/bootstrap.min.js"></script>
+										<li>
+											<a   href="team">{% if title=="team" %}
+												TEAM
+												{% else %}
+												team
+												{% endif %}</a>
+											</li>
 
 
 
+										</ul>
+									</div>
+									<!-- /.navbar-collapse -->
+								</div>
+								<!-- /.container -->
+							</nav>
+						</header>
 
-</body>
-</html>
+						{% block content %}
+
+						{% endblock %}
+						<footer>
+							<button type="button" class="btn circle3"></button>
+							<button type="button" class="btn circle2"></button>
+							<button type="button" class="btn circle1"></button>
+							<button onclick="location.href='http://www.tauber.umich.edu/events-training/integrated-product-development/2016-04-06/integrated-product-development-trade-show';" type="button" class="btn btn-circle" style="font-family:caviar_dreamsbold;font-size:16px;">IPD Home</button>
+
+						</footer>
+
+						<!-- jQuery -->
+						<script src="../static/js/jquery.js"></script>
+						<script src="../static/js/main.js"></script>
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+						<!-- Bootstrap Core JavaScript -->
+						<script src="../static/js/bootstrap.min.js"></script>
+
+
+
+
+					</body>
+					</html>

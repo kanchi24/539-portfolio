@@ -22,11 +22,11 @@ class MainHandler(webapp2.RequestHandler):
         # use the path to retreive the template : this will work for any another html file added to this application without changing the logic
         try:
         	template = JINJA_ENVIRONMENT.get_template('templates/%s'%pagename+'.html')
-        	self.response.write(template.render())
+        	self.response.write(template.render({'title':pagename}))
         except:
         # this handles the first call to the application which doesnt consist of the filename after the hostname, render home template in this case
         	template = JINJA_ENVIRONMENT.get_template('templates/index.html')
-        	self.response.write(template.render())
+        	self.response.write(template.render({'title': 'about'}))
 
 
 app = webapp2.WSGIApplication([
