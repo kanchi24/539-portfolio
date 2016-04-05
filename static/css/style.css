@@ -288,27 +288,20 @@ h1{
 /*scenario section*/
 
 
-.carousel .item img{
-    margin: 0 auto;  Align slide image horizontally center 
-    width: 50%;
-    height: 50%;
-}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
 
+.scenario-section{
+
+  padding-top: 10%;
+}
 
 /*team-section*/
 
 .my-img-circle {
-
-  width: 150px;
-  height: 150px;
-  margin-top: 30%;
-  
-  
- 
-
-}
-
-.my-img-circle-hidden{
 
   width: 150px;
   height: 150px;
@@ -447,6 +440,11 @@ h1{
   padding-top: 50%;
 }
 
+.scenario-section{
+
+  padding-top: 30%;
+}
+
 
 
 }
@@ -479,6 +477,11 @@ h1{
   margin-bottom: 5%;
   text-align: center;
 
+}
+
+.scenario-section{
+
+  padding-top: 50%;
 }
 
 
