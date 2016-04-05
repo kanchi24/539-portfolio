@@ -139,34 +139,7 @@ of those sections to manage the look and feel of the site. */
 
 }
 
-.persona-section {
-  height: 100%;
-  padding-top: 50px;
-  text-align: justify;
-  background: #fff;
-  
-}
 
-div.transbox {
-  width:500px;
-  background-color: #ffffff;
-  margin-left: -20px;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-}
-
-.persona-section p,.video-section-2 p{
-
- font-size : 18px;
-
-}
-
-.video-section-2 p{
-
- text-align: justify;
- line-height: 2;
-
- }
 
 .intro-section h1,.features-section h1,.persona-section h2,.new-features-section h2, h4{
 
@@ -202,22 +175,7 @@ div.transbox {
   background: #fff;
 }
 
-.video-section-1 {
-  height: 100%;
-  padding-top: 150px;
-  text-align: center;
-  background: #fff;
-  
 
-}
-
-.video-section-2 {
-  height: 100%;
-  padding-top: 50px;
-  text-align: center;
-  background: #fff;
-  
-}
 
 .new-features-section {
   height: 100%;
@@ -233,12 +191,6 @@ div.transbox {
   background: #fff;
 }
 
-.persona-section {
-  height: 100%;
-  padding-top: 20px;
-  
-  background: #fff;
-}
 
 
 
@@ -274,8 +226,8 @@ div.transbox {
 #landing {
 
 background: hsla(0, 0%, 0%, 0.3);
-width:60%;
-margin-left:-10%;
+width:50%;
+
 display:block;
 margin-top:-2%;
 height:auto;
@@ -422,13 +374,6 @@ display: block;
         display: block;
     }
 
-#tagline{
-        margin-left: 18%;
-      }
-
-      #main-heading{
-        margin-left: 20%;
-      }
 
 @media (max-width: 674px){
 
@@ -463,16 +408,18 @@ display: none;
       }
       .btn-circle{
 
-        width:100px;
-        height:100px;
-        
+        width:100%;
+        height:50px;
+        border-radius: 0px;
         font-family: caviar_dreamsbold;
         opacity: 1;
         text-align: center;
         font-size: 8px;
-        position: absolute;
-        margin-right: -15%;
-        top:25px;
+        position: fixed;
+        
+        right: 0;
+        bottom: 0;
+        margin: 0;
 
       }
 
@@ -480,7 +427,7 @@ display: none;
 
     
 
-    background-color: transparent;
+    
     width:100%;
     margin-left:0%;
     display:block;
@@ -497,6 +444,7 @@ display: none;
 
       #main-heading{
         margin-left: 1%;
+       
       }
 
       .intro-section,.new-features-section,.scenario-section,.team-section{
