@@ -86,6 +86,21 @@ h2{
  color: #f89d3e;
 }
 
+/*navbar responsive - bootstrap code*/
+
+@media(min-width:767px) {
+  .navbar {
+
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+  }
+}
+
 /*footer*/
 
 .btn-circle{
@@ -185,6 +200,7 @@ h2{
 }
 
 
+
 .new-features-section {
 
   padding-top: 30px;
@@ -194,6 +210,7 @@ h2{
 
 
 
+/*features section*/
 
 
 .features-section p{
@@ -203,13 +220,23 @@ h2{
 }
 
 
+
+.features-section {
+ 
+  padding-top: 10%;
+  background: #fff;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+
 .features-section h3, .team-section h3{
 
   font-family: caviar_dreamsbold;
 
 }
 
-
+/*price to display in mobile view*/
 
 #price{
 
@@ -217,38 +244,21 @@ h2{
   color: #f89d3e;
 }
 
+/*renders to display only in mobile view in a line*/
+
 #renders{
 
   display: none;
 }
 
 
-@media(min-width:767px) {
-  .navbar {
-
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
-  }
-
-  .top-nav-collapse {
-    padding: 0;
-  }
-}
-
-
-
-
-
-
-
+/*video section*/
 
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
   height: 0; 
-
   overflow: hidden;
 }
 
@@ -263,23 +273,22 @@ h2{
 }
 
 
-.features-section {
-  height: 100%;
-  padding-top: 150px;
-  text-align: center;
-  background: #fff;
-}
 
 
 
 
 
-.features-section {
-  height: 100%;
-  padding-top: 80px;
-  
-  background: #fff;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -388,7 +397,7 @@ h2{
   .btn-circle{
 
     width:100%;
-    height:50px;
+    height:40px;
     border-radius: 0px;
     font-family: caviar_dreamsbold;
     opacity: 1;
@@ -420,18 +429,10 @@ h2{
 
 
 
-  .intro-section,.new-features-section,.scenario-section,.team-section{
-    margin-top: 25px;
-  }
+  
   .intro-section{
     background-size: contain;
     height:250px;
-  }
-
-  .features-section{
-
-    margin-top: 5px;
-    height:1100px;
   }
 
   .scenario-section{
@@ -445,10 +446,7 @@ h2{
     height: 100%;
     margin-top: 1%;
 
-    .render{
-
-
-    }
+  
 
 
 
@@ -459,6 +457,20 @@ h2{
 
 
 
+
+
+}
+
+
+/*considering tablet width*/
+
+@media (max-width: 770px){
+
+  .features-section{
+
+    padding-top: 25%;
+    padding-bottom: 20%;
+  }
 
 
 }
@@ -474,7 +486,7 @@ h2{
 
 
 
-body#about a#about, body#features a#features, body#video a#video, body#scenarios a#scenarios, body#team a#team{
+body.about a.about, body.features a.features, body.video a.video, body.scenarios a.scenarios, body.team a.team{
 
   color: black;
 }
