@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body id="{{title}}">
 	<header>
 		<!-- Navigation -->
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -38,7 +38,7 @@
 						</li>
 
 						<li>
-							<a href="index">{% if title=="about" %}
+							<a id="about" href="index">{% if title=="about" %}
 								ABOUT
 								{% else %}
 								about
@@ -46,7 +46,7 @@
 
 							</li>
 							<li>
-								<a  href="features">{% if title=="features" %}
+								<a  id="features" href="features">{% if title=="features" %}
 									FEATURES
 									{% else %}
 									features
@@ -55,7 +55,7 @@
 								</li>
 
 								<li>
-									<a   href="video">{% if title=="video" %}
+									<a  id="video" href="video">{% if title=="video" %}
 										VIDEO
 										{% else %}
 										video
@@ -63,7 +63,7 @@
 									</li>
 
 									<li>
-										<a href="scenarios">{% if title=="scenarios" %}
+										<a id="scenarios" href="scenarios">{% if title=="scenarios" %}
 											SCENARIOS
 											{% else %}
 											scenarios
@@ -72,7 +72,7 @@
 
 
 										<li>
-											<a   href="team">{% if title=="team" %}
+											<a  id="team" href="team">{% if title=="team" %}
 												TEAM
 												{% else %}
 												team

@@ -556,4 +556,7 @@ display: none;
   margin-top:30%;margin-left:-30%;
 }
 
+body#about a#about, body#features a#features, body#video a#video, body#scenarios a#scenarios, body#team a#team{
 
+  color: black;
+}
