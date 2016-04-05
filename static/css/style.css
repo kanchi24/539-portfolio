@@ -1,0 +1,480 @@
+/*importing external fonts*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+@font-face {
+  font-family: 'caviar_dreamsregular';
+  src: url('../fonts/CaviarDreams-webfont.eot');
+  src: url('../fonts/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CaviarDreams-webfont.woff') format('woff'),
+  url('../fonts/CaviarDreams-webfont.ttf') format('truetype'),
+  url('../fonts/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'caviar_dreamsbold';
+  src: url('../fonts/Caviar_Dreams_Bold-webfont.eot');
+  src: url('../fonts/Caviar_Dreams_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Caviar_Dreams_Bold-webfont.woff') format('woff'),
+  url('../fonts/Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
+  url('../fonts/Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+/*setting common styling*/
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: caviar_dreamsregular;
+
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+
+  font-size: 80px;
+}
+
+p{
+  font-family: Lato;
+  line-height: 25px;
+}
+
+h2{
+  letter-spacing: 5px;
+  font-family: caviar_dreamsregular;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+
+
+/*Setting base template styling*/
+
+/*navbar*/
+
+
+.navbar {
+
+  font-size: 15px;
+}
+
+.navbar li>a{
+
+  font-family: caviar_dreamsbold;
+  letter-spacing: 2px;
+  
+}
+
+.navbar{
+
+  background-color: white;
+}
+.navbar-default .navbar-nav>li>a {
+ color: #f89d3e;
+}
+
+/*footer*/
+
+.btn-circle{
+  width: 100px;
+  height: 100px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  background-color:#00b1ea;
+  border-radius: 55px;
+  display: inline;
+  position: fixed; 
+  opacity: 0.7; 
+  color: white;
+
+
+  bottom: 50px; 
+  right: 60px; 
+}
+
+.circle1{
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  color: white;
+
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 55px;
+  display: inline;
+  opacity: 0.7; 
+  position: fixed; 
+  bottom: 140px; 
+  right: 25px; 
+}
+
+.circle2{
+  width: 40px;
+  height: 40px;
+  padding: 10px 16px;
+  font-size: 24px;
+  background-color:#f89d3e;
+  color: white;
+
+  line-height: 1.33;
+  border-radius: 55px;
+  display: inline;
+  opacity: 0.7; 
+  position: fixed; 
+  bottom: 200px; 
+  right: 90px; 
+}
+
+.circle3{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  background-color: #939597;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  display: inline;
+  position: fixed; 
+  bottom: 230px;
+  opacity: 0.7; 
+  right: 60px; 
+}
+
+
+/*footer ends*/
+
+/*about section*/
+.intro-section {
+ height:100%;
+ text-align: center;
+ background: #fff;
+ background-image: url("../images/background.png");
+
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+
+}
+
+#landing {
+
+  background: hsla(0, 0%, 0%, 0.3);
+  width:50%;
+
+  display:block;
+  margin-top:-2%;
+  height:auto;
+  padding: 5px;
+}
+
+
+.new-features-section {
+
+  padding-top: 30px;
+  padding-bottom: 15%;
+  background: #fff;
+}
+
+
+
+
+
+.features-section p{
+
+  font-size: 16px;
+
+}
+
+
+.features-section h3, .team-section h3{
+
+  font-family: caviar_dreamsbold;
+
+}
+
+
+
+#price{
+
+  display:none;
+  color: #f89d3e;
+}
+
+#renders{
+
+  display: none;
+}
+
+
+@media(min-width:767px) {
+  .navbar {
+
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+  }
+}
+
+
+
+
+
+
+
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0; 
+
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.features-section {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  background: #fff;
+}
+
+
+
+
+
+.features-section {
+  height: 100%;
+  padding-top: 80px;
+  
+  background: #fff;
+}
+
+
+
+
+.scenario-section {
+ /* height: 100%;*/
+ /* padding-top: 150px;*/
+ text-align: justify;
+ background: #fff;
+  /*background-image: url("../images/sc1.png");
+  background-size: cover;
+  background-repeat: no-repeat;*/
+
+
+}
+
+
+
+.team-section {
+  height: 100%;
+  padding-top: 100px;
+  text-align: justify;
+
+  background: #fff;
+}
+
+
+.team-section p{
+
+ /*margin-top: 10%;*/
+ font-size: 16px;
+
+}
+
+
+
+.my-img-circle {
+
+  width: 150px;
+  height: 150px;
+  margin-top: 30%;
+  
+  
+
+
+}
+
+
+
+
+
+
+
+
+#item {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  height:100%;  
+
+}
+
+
+
+
+@media (max-width: 674px){
+
+  #logo-new{
+
+    display: none;
+  }
+  #features-img{
+
+
+    display:none;
+  }
+
+  #price{
+
+    display:block;
+  }
+
+  #renders{
+
+    display: block;
+  }
+
+  .circle1{
+    display: none;
+  }
+  .circle2{
+    display:none;
+  }
+  .circle3{
+    display: none;
+  }
+  .btn-circle{
+
+    width:100%;
+    height:50px;
+    border-radius: 0px;
+    font-family: caviar_dreamsbold;
+    opacity: 1;
+    text-align: center;
+    font-size: 8px;
+    position: fixed;
+
+    right: 0;
+    bottom: 0;
+    margin: 0;
+
+  }
+
+  #landing{
+
+
+
+
+    width:100%;
+    margin-left:0%;
+    display:block;
+    margin-top:1%;
+
+    padding: 5px;
+
+
+  }
+
+
+
+
+  .intro-section,.new-features-section,.scenario-section,.team-section{
+    margin-top: 25px;
+  }
+  .intro-section{
+    background-size: contain;
+    height:250px;
+  }
+
+  .features-section{
+
+    margin-top: 5px;
+    height:1100px;
+  }
+
+  .scenario-section{
+
+    max-height:250px;
+  }
+
+  .my-img-circle {
+
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
+
+    .render{
+
+
+    }
+
+
+
+
+
+
+  }
+
+
+
+
+
+}
+
+
+.quotes {display: none;}
+
+.team-section p{
+
+  text-align: center;
+}
+
+
+
+
+body#about a#about, body#features a#features, body#video a#video, body#scenarios a#scenarios, body#team a#team{
+
+  color: black;
+}
